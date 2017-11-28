@@ -77,7 +77,7 @@ do
 	echo "  "
 	(( count++ ))
 	##-- DOWNLOAD : ..Copernicus analysis/forecast data.. --
-	python $motu_py $usr_info $svr_info $dom_info -t $t0 -T $t1 $var_info -o $odir -f $ofile
+	python -q $motu_py $usr_info $svr_info $dom_info -t $t0 -T $t1 $var_info -o $odir -f $ofile
 	t0=$t1
 	if [ $((total_days - days)) -lt 15 ]; then
 		t1=$tend
@@ -89,7 +89,7 @@ do
 		echo "...     days       : $days"
 		echo "  "
 		##-- DOWNLOAD : ..Copernicus analysis/forecast data.. --
-		python $motu_py $usr_info $svr_info $dom_info -t $t0 -T $t1 $var_info -o $odir -f $ofile
+		python -q $motu_py $usr_info $svr_info $dom_info -t $t0 -T $t1 $var_info -o $odir -f $ofile
 	fi
 	sleep 1
 done
