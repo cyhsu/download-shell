@@ -2,12 +2,12 @@
 #- NDBC ADCP updates (real-time)
 #- 
 #-	This script attempts to archieve the information of the NDBC ADCP data
-#- whether it is "activate" or "inactivate". 
+#- 	whether it is "activate" or "inactivate". 
 #- 
 #- please record the time after each run.
 #- Time Performance:
 #- 	1. 2018-01-20
-#-		2. 2018-01-22
+#-	2. 2018-01-22
 #-
 #--- 
 #---  Copyright: C.Y. Hsu@TAMU 2018-01-18
